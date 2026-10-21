@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Quốc Bảo - IT Portfolio</title>
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background động -->
+    <div class="animated-bg"></div>
+
+    <header>
+        <nav class="container">
+            <div class="logo animate__animated animate__fadeInDown">Bao<span>.Dev</span></div>
+            <ul class="animate__animated animate__fadeInDown">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="container">
+            <div class="hero-content" data-aos="zoom-out-up" data-aos-duration="1200">
+                <p class="greeting">Xin chào, tôi là</p>
+                <h1 class="animate__animated animate__pulse animate__infinite">Nguyễn Quốc Bảo</h1>
+                <h3 class="typewriter">Software Engineer & Web Developer</h3>
+                <p class="desc">Sinh viên Khoa CNTT - Đại học Lạc Hồng. Đam mê xây dựng các hệ thống web tương tác và lập trình nhúng.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">Khám phá Dự Án</a>
+                    <a href="#contact" class="btn-secondary">Liên hệ ngay</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container" data-aos="fade-up">
+            <h2 class="section-title">Về Bản Thân</h2>
+            <article class="glass-card flex-about">
+                <div class="about-text">
+                    <p>Chào bạn! Mình là một lập trình viên trẻ với tư duy logic và khả năng giải quyết vấn đề tốt. Mình có kinh nghiệm làm việc nhóm qua các môn học, đặc biệt thích tối ưu hóa thuật toán và xây dựng giao diện thân thiện với người dùng.</p>
+                    <p>Ngoài code, mình còn quản trị các domain cá nhân và tìm hiểu về mạng viễn thông, cấu hình router/mesh wifi để tối ưu hệ thống mạng.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container" data-aos="fade-up">
+            <h2 class="section-title">Kỹ Năng Kỹ Thuật</h2>
+            <div class="skills-grid">
+                <div class="skill-tag" data-aos="flip-up" data-aos-delay="100">HTML5 / CSS3 / Grid / Flexbox</div>
+                <div class="skill-tag" data-aos="flip-up" data-aos-delay="200">JavaScript / DOM Manipulation</div>
+                <div class="skill-tag" data-aos="flip-up" data-aos-delay="300">Python / Algorithms / Pygame</div>
+                <div class="skill-tag" data-aos="flip-up" data-aos-delay="400">C++ / ESP32 / ESP-NOW</div>
+                <div class="skill-tag" data-aos="flip-up" data-aos-delay="500">Git / GitHub / Version Control</div>
+                <div class="skill-tag" data-aos="flip-up" data-aos-delay="600">Web Hosting / Domain Config</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container">
+            <h2 class="section-title" data-aos="fade-up">Dự Án Nổi Bật</h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <article class="glass-card project-card" data-aos="fade-up-right">
+                    <div class="project-content">
+                        <h3>Oẳn Tù Tì (Web Game)</h3>
+                        <p>Dự án game tương tác xây dựng cùng team 5 thành viên. Tích hợp AI phân loại độ khó, cơ chế tính chuỗi thắng (winstreak), skin cosmetics và giao diện trực quan.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS/UI</span>
+                            <span>Vanilla JS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="glass-card project-card" data-aos="fade-up-left">
+                    <div class="project-content">
+                        <h3>Hệ Thống Điểm Danh Mạng ESP-NOW</h3>
+                        <p>Mô hình truyền nhận dữ liệu tốc độ cao ứng dụng vi điều khiển ESP32-C3. Lập trình C++ với cấu trúc gói tin (packet) và gửi dữ liệu UDP chu kỳ 25ms giữa các board.</p>
+                        <div class="tech-stack">
+                            <span>C++</span>
+                            <span>ESP32</span>
+                            <span>Networking</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container" data-aos="zoom-in">
+            <h2 class="section-title">Kết Nối Với Mình</h2>
+            <article class="glass-card contact-form-wrapper">
+                <form class="contact-form">
+                    <div class="input-group">
+                        <label for="name">Tên của bạn</label>
+                        <input type="text" id="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Tin nhắn</label>
+                        <textarea id="message" rows="4" placeholder="Để lại lời nhắn..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit">Gửi Tin Nhắn</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" data-aos="fade-in" data-aos-offset="0">
+            <p>&copy; 2026 Nguyễn Quốc Bảo (MSSV: 125000946). Vibe Coding Project.</p>
+        </div>
+    </footer>
+
+    <!-- Khởi tạo AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 80,
+            duration: 800,
+            easing: 'ease-in-out-cubic',
+        });
+    </script>
+</body>
+</html>
